@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="withd=device-width, initial-scale=1.-">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<title>Product Details - KAMAGONG FURNITURE</title>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" width="200px"></a>
+			</div>
+				<nav>
+					<ul id="MenuItems">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="product.html">Products</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="account.html">Account</a>
+						</li>
+					</ul>
+				</nav>
+				<img src="images/menu.png" class="menu" onclick="menutoggle()">
+			</div>	
+		</div>		
+
+	<div class="smallcontainer detail">
+		<div class="row">
+			<div class="col2">
+				<img src="images/mirror3.png" width="100%" id="ProductImg">
+
+				<div class="smallrow">
+					<div class="smallcol">
+						<img src="images/mirror3.png" width="100%" class="smallimg">
+					</div>
+					<div class="smallcol">
+						<img src="images/mirror3a.png" width="100%" class="smallimg">
+					</div>
+				</div>
+
+			</div>
+			<div class="col2">
+				<p>
+					Home / Mirror
+				</p>
+				<h1>
+					Mirror on the Wall by KF
+				</h1>
+				<h4>
+					&#8369 2,500.00
+				</h4>
+				<h3>Product Details</h3>
+				<p>Accent Mirror<br>Material: Rattan<br>Color: Black</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="smallcontainer">
+		<div class="row row2">
+			<h2>
+				Related Products
+			</h2>
+			<a href="product.html"><p>
+				View More
+			</p></a>
+		</div>
+	</div>
+
+	<div class="smallcontainer">
+		<div class="row">
+			<div class="col4">
+				<a href="table1.html">
+				<img src="images/table1.png">
+				<h4>Wen Table</h4>
+				<p>&#8369 55,000.00</p>
+				</a>
+			</div>
+			<div class="col4">
+				<a href="bed2.html">
+				<img src="images/bed2.png">
+				<h4> Bed</h4>
+				<p>P55,000.00</p>
+				</a>
+			</div>
+			<div class="col4">
+				<a href="light2.html">
+				<img src="images/light2.png">
+				<h4>Turn Light</h4>
+				<p>P55,000.00</p>
+				</a>
+			</div>
+			<div class="col4">
+				<a href="chair6.html">
+				<img src="images/chair6.jpg">
+				<h4>Chair Ot</h4>
+				<p>P55,000.00</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="fcol1">
+					<h3>
+						Download Our App
+					</h3>
+					<p>
+						Download App for Android and IOS mobile phone.
+					</p>	
+					<div class="app">
+						<img src="images/play-store.png">
+						<img src="images/app-store.png">
+					</div>				
+				</div>
+				<div class="fcol2">
+					<img src="images/logo-white.png">
+					<p>
+						Make your home your own personal sanctuary.
+					</p>					
+				</div>
+				<div class="fcol3">
+					<h3>
+						Connect with Us
+					</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+					</ul>					
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2020. Kamagong Furnitures.</p>
+		</div>
+	</div>
+
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeight = "0px";
+
+		function menutoggle()
+		{
+			if (MenuItems.style.maxHeight == "0px") 
+				{
+					MenuItems.style.maxHeight = "800px";
+				}
+			else
+				{
+					MenuItems.style.maxHeight = "0px";
+				}
+		}
+	</script>
+
+	<script type="text/javascript">
+		var ProductImg = document.getElementById("ProductImg");
+		var SmallImg = document.getElementsByClassName("smallimg");
+
+		SmallImg[0].onclick = function()
+		{
+			ProductImg.src = SmallImg[0].src;
+		}
+		SmallImg[1].onclick = function()
+		{
+			ProductImg.src = SmallImg[1].src;
+		}
+	</script>
+</body>
+</html>

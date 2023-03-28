@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="withd=device-width, initial-scale=1.-">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<title>2 - All Products - KAMAGONG FURNITURE</title>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" width="200px"></a>
+			</div>
+				<nav>
+					<ul id="MenuItems">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="product.html">Products</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="account.html">Account</a>
+						</li>
+					</ul>
+				</nav>
+				<img src="images/menu.png" class="menu" onclick="menutoggle()">
+			</div>	
+		</div>		
+
+	<div class="smallcontainer">
+
+		<div class="row row2">
+			<h2>All Products</h2>
+			<select>
+				<option>Default Sorting</option>
+				<option>Sort by price</option>
+				<option>Sort by popularity</option>
+				<option>Sort by sale</option>
+			</select>
+		</div>
+
+		<div class="row">
+			<div class="col4">
+				<a href="bed2.html">
+				<img src="images/bed2.png">
+				<h4>Madi Bed</h4>
+				<p>&#8369 54,000.00</p>
+			</a>
+			</div>
+			<div class="col4">
+				<a href="chair1.html">
+				<img src="images/chair1.jpg">
+				<h4>Oke Chair</h4>
+				<p>&#8369 11,000.00</p>
+			</a>
+			</div>
+			<div class="col4">
+				<a href="mirror1.html">
+				<img src="images/mirror1a.png">
+				<h4>Sabam Mirror</h4>
+				<p>&#8369 2,520.00</p>
+			</a>
+			</div>
+			<div class="col4">
+				<a href="rug1.html">
+				<img src="images/rug1.png">
+				<h4>Malay Rug</h4>
+				<p>&#8369 36,000.00</p>
+				</a>
+			</div>
+			</div>
+				<div class="row">
+			<div class="col4">
+				<a href="rug2.html">
+				<img src="images/rug2.jpg">
+				<h4>Kitde Rug</h4>
+				<p>&#8369 11,500.00</p>
+				</a>
+			</div>
+			<div class="col4">
+				<a href="bed5.html">
+				<img src="images/bed5.png">
+				<h4>Kiri Bed</h4>
+				<p>&#8369 66,000.00</p>
+				</a>
+			</div>
+			<div class="col4">
+				<a href="chair4.html">
+					<img src="images/chair4.png">
+				<h4>Chair Lang</h4>
+				<p>&#8369 5,500.00</p>
+				</a>			
+			</div>
+			<div class="col4">
+				<a href="rug4.html">
+				<img src="images/rug4.png">
+				<h4>Asci Rug</h4>
+				<p>&#8369 24,000.00</p>
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col4">
+				<a href="mirror3.html">
+				<img src="images/mirror3.png">
+				<h4>Mirror on the Wall</h4>
+				<p>&#8369 2,500.00</p>
+			</a>
+			</div>
+			<div class="col4">
+				<a href="chair5.html">
+				<img src="images/chair5.png">
+				<h4>Magic Chair</h4>
+				<p>&#8369 5,500.00</p>
+			</a>
+			</div>
+			<div class="col4">
+				<a href="rug5.html">
+				<img src="images/rug5.jpg">
+				<h4>Flying Rug</h4>
+				<p>&#8369 66,000.00</p>
+			</a>
+			</div>
+			<div class="col4">
+				<a href="mirror4.html">
+				<img src="images/mirror4.jpg">
+				<h4>Mirror on the Floor</h4>
+				<p>&#8369 14,000.00</p>
+			</a>
+			</div>
+		</div>
+		<div class="pagebtn">
+			<a href="product.html"><span>1</span></a>
+			<span>2</span>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="fcol1">
+					<h3>
+						Download Our App
+					</h3>
+					<p>
+						Download App for Android and IOS mobile phone.
+					</p>	
+					<div class="app">
+						<img src="images/play-store.png">
+						<img src="images/app-store.png">
+					</div>				
+				</div>
+				<div class="fcol2">
+					<img src="images/logo-white.png">
+					<p>
+						Make your home your own personal sanctuary.
+					</p>					
+				</div>
+				<div class="fcol3">
+					<h3>
+						Connect with Us
+					</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+					</ul>					
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2020. Kamagong Furnitures.</p>
+		</div>
+	</div>
+
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeight = "0px";
+
+		function menutoggle(){
+			if (MenuItems.style.maxHeight == "0px") 
+				{
+					MenuItems.style.maxHeight = "800px";
+				}
+			else
+				{
+					MenuItems.style.maxHeight = "0px";
+				}
+		}
+	</script>
+</body>
+</html>
